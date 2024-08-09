@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #228f80; /* Fondo más oscuro en hover */
+    background-color: #228f80; /* Fondo más verdoso en hover */
 }
 
 button:active {
@@ -269,64 +269,6 @@ input:focus {
     transition: transform 0.3s ease, color 0.3s ease; /*animacion de los iconos*/
 }
 
-
-/* Estilos mejorados para el pie de página */
-.footer {
-  width: auto; /* Ancho automático */
-  text-align: left; /* Texto alineado a la izquierda */
-  padding: 20px; /* Padding superior, inferior y lateral */
-  background: transparent; /* Fondo transparente */
-  font-family: 'Roboto', sans-serif; /* Fuente Roboto */
-  position: fixed; /* Posicionamiento fijo */
-  bottom: 0; /* Alineado al fondo */
-  left: 0; /* Alineado a la izquierda */
-  width: 100%; /* Ancho completo */
-  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Borde superior sutil */
-}
-
-.footer-content {
-  display: flex; /* Flexbox */
-  flex-direction: column; /* Dirección de columna */
-  align-items: flex-start; /* Alinear al inicio (izquierda) */
-  justify-content: center; /* Justificar al centro */
-  min-height: 50px; /* Altura mínima */
-}
-
-.footer-content p {
-  margin: 1px 1px 0; /* Márgenes */
-  color: #030303; /* Color del texto oscuro */
-  font-size: 16px; /* Tamaño de fuente mejorado */
-    font-weight: bold; /*negrita para el texto*/
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Transición suave del color y subrayado */
-}
-
-.footer-content p:hover {
-  color: #2ab7a9; /* Color verde turquesa en hover */
-  text-decoration-thickness: 2px; /* Subrayado en hover */
-}
-
-.social-icons {
-  display: flex; /* Flexbox */
-  justify-content: flex-start; /* Justificar al inicio (izquierda) */
-  gap: 15px; /* Espaciado entre iconos */
-  margin-top:12; /* Margen superior */
-    padding:0 18px;
-}
-
-.social-icons a {
-  color: #000000; /* Color negro para los iconos */
-  font-size: 28px; /* Tamaño de los iconos mejorado */
-    margin-left: 10px;
-  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave del color y escala */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil en los iconos */
-}
-
-.social-icons a:hover {
-  color: #2ab7a9; /* Color verde turquesa en hover */
-  transform: scale(1.1); /* Efecto de escala en hover */
-}
-
-
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
@@ -339,7 +281,7 @@ input:focus {
     .form-container {
         width: 100%; /* Ancho completo */
         left: 0; /* Alineado a la izquierda */
-        padding-top: 140px; /* Empuja el contenido hacia abajo */
+        padding-top: 50px; /* Empuja el contenido hacia abajo */
         background-color: #ffffff; /* Asegura que el color de fondo del padding sea igual al del contenedor */
     }
     .sign-in-container {
@@ -354,24 +296,13 @@ input:focus {
     .container.right-panel-active .sign-up-container {
         transform: translateX(0); /* Sin movimiento */
     }
-    /* para visualizar el  pie de pagina */
-    .form-container {
-      height: calc(100% - 140px); /* Ajusta la altura restando 50px para el pie de página */
-    }
-    .footer {
-        transform: scale(0.8) translateX(-60px); /* Reduce el tamaño del footer y lo mueve 5px a la izquierda */
-    }
+
+
 }
-@media (min-width: 769px) {
+@media (min-width: 769px) {  /* para quitar buttons de funsion toggle*/
     .switch-btn {
         opacity: 0; /* Hace el botón completamente transparente */
         pointer-events: none; /* Deshabilita la interacción con el botón */
         visibility: hidden; /* Hace que el botón no ocupe espacio en el flujo del documento */
     }
 }
-    
-    
-
-    
-    
-    
